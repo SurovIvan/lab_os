@@ -4,6 +4,7 @@
 #include <cstdlib> // для rand()
 #include <chrono>
 #include <unistd.h>
+
 #define MAX_SIZE 100000000
 #define LEN_WORD 8
 
@@ -52,7 +53,7 @@ void* pthread_sub_seacrh(void* args) {
 
 int main(int argc, char* argv[]) {
     if (argc != 2) {
-        std::cout << "Incorrect input, enter  " << argv[0] << "number of threads";
+        std::cout << "Incorrect input, enter " << argv[0] << " number of threads" << std::endl;
         return 0;
     }
     char* text = new char[MAX_SIZE];

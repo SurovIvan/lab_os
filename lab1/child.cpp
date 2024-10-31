@@ -15,7 +15,6 @@ int main(int argc, char *argv[]) {
     std::ofstream result;
     result.open(argv[1]);
     
-    std::cout<<"helelel";
     if (!result) {
         perror("File opening error");
         exit(-1);
